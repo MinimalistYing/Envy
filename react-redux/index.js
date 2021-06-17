@@ -1,5 +1,7 @@
-import Provider from './Provider'
+import Provider from './components/Provider.jsx'
+import connect from './connect/connect'
 
-export default {
-  Provider
+export {
+  Provider,
+  connect
 }

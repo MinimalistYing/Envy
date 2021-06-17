@@ -1,6 +1,8 @@
 import React from 'react'
 import { ActionCreators as UndoActionCreators } from 'redux-undo'
-import { connect } from 'react-redux'
+
+// import { connect } from 'react-redux'
+import { connect } from '../../../react-redux'
 
 let UndoRedo = ({ canUndo, canRedo, onUndo, onRedo }) => (
   <p>
