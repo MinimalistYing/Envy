@@ -6,7 +6,7 @@
  * @param {function} enhancer 通常是 applyMiddleware 返回的中间件
  */
 export default function createStore(reducer, preloadedState, enhancer) {
-  // 有使用中间件
+  // 如果使用中间件
   if (typeof enhancer !== 'undefined') {        
     // 这里的逻辑需要在 applyMiddleware 去 createStore
     // applyMiddleware() 返回的是一个形如 createStore => (...args) => {} 的函数
