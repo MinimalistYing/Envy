@@ -13,6 +13,8 @@ const todo = (state, action) => {
         return state
       }
 
+      console.log('!!!!', state, action)
+
       return {
         ...state,
         completed: !state.completed

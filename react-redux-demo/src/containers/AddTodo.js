@@ -1,12 +1,14 @@
 import React from 'react'
 
 // import { connect } from 'react-redux'
-import { connect } from '../../../react-redux'
+import { useDispatch } from '../../../react-redux'
 
 import { addTodo } from '../actions'
 
-let AddTodo = ({ dispatch }) => {
+let AddTodo = () => {
   let input
+
+  const dispatch = useDispatch()
 
   return (
     <div>
@@ -28,6 +30,5 @@ let AddTodo = ({ dispatch }) => {
     </div>
   )
 }
-AddTodo = connect()(AddTodo)
 
 export default AddTodo
